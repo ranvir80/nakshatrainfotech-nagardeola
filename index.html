@@ -3,169 +3,656 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nakshatra Infotech Computer Classes - Empowering Your Digital Future</title>
-    <meta name="description" content="Nakshatra Infotech Computer Classes offers career-oriented computer courses including MS-CIT, MKCL KLiC, Tally with GST, Advanced Excel, Hardware & Networking, and Typing courses. Professional computer training with placement support.">
-    <meta name="keywords" content="computer classes, MS-CIT, Tally course, Excel training, typing course, computer education, Nagardeola, MKCL KLiC, hardware networking">
-    <meta name="author" content="Nakshatra Infotech Computer Classes">
-    
-    <!-- Open Graph tags for social media -->
-    <meta property="og:title" content="Nakshatra Infotech Computer Classes - Computer Training & Education">
-    <meta property="og:description" content="Transform your career with our comprehensive computer training programs. MS-CIT, Tally, Excel, Typing courses and more.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nakshatrainfotech.com">
-    <meta property="og:image" content="https://nakshatrainfotech.com/og-image.jpg">
-    
-    <!-- Twitter Card tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nakshatra Infotech Computer Classes">
-    <meta name="twitter:description" content="Professional computer training courses with placement support">
-    
-    <!-- Structured Data for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
-      "name": "Nakshatra Infotech Computer Classes",
-      "description": "Computer training institute offering MS-CIT, Tally, Excel and other professional courses",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Wani Gali",
-        "addressLocality": "Nagardeola",
-        "addressCountry": "India"
-      },
-      "telephone": "9876543210",
-      "email": "xyz@gmail.com",
-      "url": "https://nakshatrainfotech.com",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Computer Courses",
-        "itemListElement": [
-          {
-            "@type": "Course",
-            "name": "MS-CIT",
-            "description": "Maharashtra State Certificate in Information Technology"
-          },
-          {
-            "@type": "Course", 
-            "name": "Tally with GST",
-            "description": "Accounting software training with GST"
-          },
-          {
-            "@type": "Course",
-            "name": "Advanced Excel",
-            "description": "Data analysis and automation with Excel"
-          }
-        ]
-      }
-    }
-    </script>
+    <title>Nakshatra Infotech Computer Classes - Quality Computer Education</title>
     
     <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- EmailJS SDK -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("XeABwb0dhjirgZNxm");
+        })();
+    </script>
     
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #10b981;
+            --primary-dark: #059669;
+            --secondary-color: #0f172a;
+            --text-primary: #f1f5f9;
+            --text-secondary: #cbd5e1;
+            --bg-primary: #1e293b;
+            --bg-secondary: #0f172a;
+            --border-color: #334155;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--primary-color);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 0 80px;
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary-color), #06d6a0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-description {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        /* Study Materials Section */
+        .study-materials {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .section-header p {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .feature-card i {
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            color: white;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .study-materials-cta {
+            text-align: center;
+        }
+
+        .study-materials-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1.25rem 2.5rem;
+            background: white;
+            color: var(--primary-color);
+            border: none;
+            border-radius: 16px;
+            font-weight: 700;
+            font-size: 1.125rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+        }
+
+        .study-materials-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+            background: #f8fafc;
+        }
+
+        /* Courses Section */
+        .courses {
+            padding: 80px 0;
+            background: var(--bg-primary);
+        }
+
+        .courses .section-header h2 {
+            color: var(--text-primary);
+        }
+
+        .courses .section-header p {
+            color: var(--text-secondary);
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .course-card {
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary-color);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .course-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 16px;
+            margin-bottom: 1.5rem;
+            color: white;
+            font-size: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+        }
+
+        .course-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .course-subtitle {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .course-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .course-meta {
+            display: flex;
+            gap: 1rem;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        .course-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* More Courses Section */
+        .more-courses-section {
+            text-align: center;
+            margin-top: 60px;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            border-radius: 16px;
+        }
+
+        .more-courses-section p {
+            color: white;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .more-courses-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .more-courses-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background: var(--bg-secondary);
+        }
+
+        .contact .section-header h2 {
+            color: var(--text-primary);
+        }
+
+        .contact .section-header p {
+            color: var(--text-secondary);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info h3 {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-items {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .contact-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            height: 3rem;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 12px;
+            font-size: 1.25rem;
+        }
+
+        .contact-details h4 {
+            color: var(--text-primary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-details p,
+        .contact-details a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-details a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Contact Form */
+        .contact-form-container h3 {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-group label {
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .submit-button {
+            padding: 1rem 2rem;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background: var(--primary-dark);
+        }
+
+        .form-status {
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            display: none;
+        }
+
+        .form-status.success {
+            background: #10b981;
+            color: white;
+        }
+
+        .form-status.error {
+            background: #ef4444;
+            color: white;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-primary);
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-logo h3 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-content > p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            height: 3rem;
+            background: var(--bg-secondary);
+            color: var(--text-secondary);
+            border-radius: 50%;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .copyright {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+
+            .courses-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
     <!-- Navigation -->
-    <nav id="navbar" class="navbar">
+    <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <h1>
-                    <i class="fas fa-laptop-code"></i>
-                    Nakshatra Infotech
-                </h1>
+            <div class="nav-brand">
+                <i class="fas fa-laptop-code"></i>
+                <span>Nakshatra Infotech</span>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link" aria-label="Go to home section">
-                        <i class="fas fa-home"></i>
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#courses" class="nav-link" aria-label="View our courses">
-                        <i class="fas fa-graduation-cap"></i>
-                        <span>Courses</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#study-materials" class="nav-link" aria-label="Access study materials">
-                        <i class="fas fa-book"></i>
-                        <span>Study Materials</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link" aria-label="Contact us">
-                        <i class="fas fa-envelope"></i>
-                        <span>Contact</span>
-                    </a>
-                </li>
-            </ul>
-            <div class="hamburger" aria-label="Toggle mobile menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#study-materials" class="nav-link">Study Materials</a>
+                <a href="#courses" class="nav-link">Courses</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <main id="main-content">
+    <main>
         <!-- Hero Section -->
         <section id="home" class="hero">
-            <div class="hero-background">
-                <div class="floating-element floating-1"></div>
-                <div class="floating-element floating-2"></div>
-            </div>
-            <div class="hero-container">
+            <div class="container">
                 <div class="hero-content">
-                    <h1 class="hero-title">
-                        <span class="title-main">Empowering Your</span>
-                        <span class="title-highlight">Digital Future</span>
-                    </h1>
-                    <p class="hero-description">
-                        Transform your career with our comprehensive computer training programs designed for today's digital world. Join thousands of successful students and build your professional skills.
-                    </p>
-                    <div class="hero-buttons">
-                        <button class="cta-button primary" onclick="scrollToSection('courses')">
-                            <i class="fas fa-rocket"></i>
-                            Explore Courses
-                        </button>
-                        <button class="cta-button secondary" onclick="scrollToSection('study-materials')">
-                            <i class="fas fa-download"></i>
-                            Free Resources
-                        </button>
+                    <div class="hero-text">
+                        <h1>
+                            Master <span class="gradient-text">Computer Skills</span><br>
+                            Shape Your <span class="gradient-text">Digital Future</span>
+                        </h1>
+                        <p class="hero-description">
+                            Transform your career with our comprehensive computer courses. From basic MS-CIT to advanced Tally and Excel training, we provide hands-on learning that gets you job-ready.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#courses" class="btn btn-primary">
+                                <i class="fas fa-graduation-cap"></i>
+                                Explore Courses
+                            </a>
+                            <a href="#study-materials" class="btn btn-secondary">
+                                <i class="fas fa-book-open"></i>
+                                Free Study Materials
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="computer-illustration">
-                        <div class="screen">
-                            <div class="browser-bar">
-                                <div class="browser-dot red"></div>
-                                <div class="browser-dot yellow"></div>
-                                <div class="browser-dot green"></div>
-                            </div>
-                            <div class="code-lines">
-                                <div class="code-line active"></div>
-                                <div class="code-line"></div>
-                                <div class="code-line"></div>
-                                <div class="code-line"></div>
-                                <div class="code-line active"></div>
-                            </div>
-                        </div>
-                        <div class="floating-icon code-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <div class="floating-icon cert-icon">
-                            <i class="fas fa-certificate"></i>
+                    <div class="hero-visual">
+                        <div style="text-align: center; font-size: 8rem; color: var(--primary-color);">
+                            <i class="fas fa-laptop-code"></i>
                         </div>
                     </div>
                 </div>
@@ -174,14 +661,8 @@
 
         <!-- Study Materials Section -->
         <section id="study-materials" class="study-materials">
-            <div class="section-background">
-                <div class="pattern-overlay"></div>
-            </div>
             <div class="container">
                 <div class="section-header">
-                    <div class="section-icon">
-                        <i class="fas fa-book-open"></i>
-                    </div>
                     <h2>Free Study Materials</h2>
                     <p>Access comprehensive study materials, notes, practice tests, and resources for all our courses. Download PDFs, watch video tutorials, and boost your learning experience.</p>
                 </div>
@@ -223,16 +704,13 @@
         <section id="courses" class="courses">
             <div class="container">
                 <div class="section-header">
-                    <div class="section-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
                     <h2>Our Courses</h2>
                     <p>Choose from our comprehensive range of computer courses designed to enhance your skills and career prospects in today's digital economy.</p>
                 </div>
                 
                 <div class="courses-grid">
                     <article class="course-card">
-                        <div class="course-icon emerald">
+                        <div class="course-icon">
                             <i class="fas fa-desktop"></i>
                         </div>
                         <h3>MS-CIT</h3>
@@ -245,7 +723,7 @@
                     </article>
 
                     <article class="course-card">
-                        <div class="course-icon amber">
+                        <div class="course-icon">
                             <i class="fas fa-certificate"></i>
                         </div>
                         <h3>MKCL KLiC</h3>
@@ -258,7 +736,7 @@
                     </article>
 
                     <article class="course-card">
-                        <div class="course-icon blue">
+                        <div class="course-icon">
                             <i class="fas fa-calculator"></i>
                         </div>
                         <h3>KLiC Tally with GST</h3>
@@ -271,7 +749,7 @@
                     </article>
 
                     <article class="course-card">
-                        <div class="course-icon green">
+                        <div class="course-icon">
                             <i class="fas fa-chart-line"></i>
                         </div>
                         <h3>KLiC Advanced Excel</h3>
@@ -284,7 +762,7 @@
                     </article>
 
                     <article class="course-card">
-                        <div class="course-icon purple">
+                        <div class="course-icon">
                             <i class="fas fa-keyboard"></i>
                         </div>
                         <h3>GCC-TBC Typing</h3>
@@ -297,7 +775,7 @@
                     </article>
 
                     <article class="course-card">
-                        <div class="course-icon red">
+                        <div class="course-icon">
                             <i class="fas fa-network-wired"></i>
                         </div>
                         <h3>Hardware & Networking</h3>
@@ -320,83 +798,10 @@
             </div>
         </section>
 
-        <!-- Why Choose Us Section -->
-        <section class="why-choose-us">
-            <div class="container">
-                <div class="why-choose-grid">
-                    <div class="why-choose-content">
-                        <h2>Why Choose Nakshatra Infotech?</h2>
-                        <p>We provide industry-leading computer education with practical, hands-on training that prepares you for real-world challenges.</p>
-                        
-                        <div class="features-list">
-                            <div class="feature-item">
-                                <div class="feature-icon">
-                                    <i class="fas fa-chalkboard-teacher"></i>
-                                </div>
-                                <div class="feature-content">
-                                    <h3>Expert Instructors</h3>
-                                    <p>Learn from industry professionals with years of practical experience.</p>
-                                </div>
-                            </div>
-                            <div class="feature-item">
-                                <div class="feature-icon">
-                                    <i class="fas fa-laptop"></i>
-                                </div>
-                                <div class="feature-content">
-                                    <h3>Hands-on Learning</h3>
-                                    <p>Practical training with real projects and industry-standard tools.</p>
-                                </div>
-                            </div>
-                            <div class="feature-item">
-                                <div class="feature-icon">
-                                    <i class="fas fa-certificate"></i>
-                                </div>
-                                <div class="feature-content">
-                                    <h3>Certified Courses</h3>
-                                    <p>Government-recognized certifications that boost your career prospects.</p>
-                                </div>
-                            </div>
-                            <div class="feature-item">
-                                <div class="feature-icon">
-                                    <i class="fas fa-users"></i>
-                                </div>
-                                <div class="feature-content">
-                                    <h3>Job Placement Support</h3>
-                                    <p>Career guidance and placement assistance to help you succeed.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="stats-grid">
-                        <div class="stat-card">
-                            <div class="stat-number">500+</div>
-                            <div class="stat-label">Students Trained</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">15+</div>
-                            <div class="stat-label">Courses Available</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">95%</div>
-                            <div class="stat-label">Success Rate</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">5+</div>
-                            <div class="stat-label">Years Experience</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="container">
                 <div class="section-header">
-                    <div class="section-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
                     <h2>Get In Touch</h2>
                     <p>Ready to start your learning journey? Contact us for course inquiries, enrollment details, or any questions you may have.</p>
                 </div>
@@ -478,7 +883,6 @@
                             </div>
                             <button type="submit" class="submit-button">
                                 <span class="button-text">Send Message</span>
-                                <span class="button-loading"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
                             </button>
                         </form>
                         <div id="form-status" class="form-status"></div>
@@ -517,7 +921,116 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Contact form handling
+        const contactForm = document.getElementById('contact-form');
+        const formStatus = document.getElementById('form-status');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const formData = new FormData(contactForm);
+                const name = formData.get('name').trim();
+                const email = formData.get('email').trim();
+                const phone = formData.get('phone').trim();
+                const course = formData.get('course');
+                const message = formData.get('message').trim();
+                
+                if (!name || !email || !message) {
+                    showFormStatus('Please fill in all required fields.', 'error');
+                    return;
+                }
+                
+                if (!isValidEmail(email)) {
+                    showFormStatus('Please enter a valid email address.', 'error');
+                    return;
+                }
+                
+                try {
+                    if (typeof emailjs !== 'undefined') {
+                        const response = await emailjs.send(
+                            'service_oklb3ik',
+                            'template_zs8ebfi',
+                            {
+                                from_name: name,
+                                from_email: email,
+                                phone: phone,
+                                course: course,
+                                message: message,
+                                to_name: 'Nakshatra Infotech Computer Classes'
+                            }
+                        );
+                        
+                        if (response.status === 200) {
+                            showFormStatus('Thank you for your message! We will get back to you soon.', 'success');
+                            contactForm.reset();
+                        } else {
+                            throw new Error('Failed to send message');
+                        }
+                    } else {
+                        throw new Error('EmailJS not available');
+                    }
+                } catch (error) {
+                    console.error('EmailJS Error:', error);
+                    showFormStatus('Sorry, there was an error sending your message. Please try again or contact us directly.', 'error');
+                }
+            });
+        }
+
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        function showFormStatus(message, type) {
+            if (formStatus) {
+                formStatus.textContent = message;
+                formStatus.className = `form-status ${type}`;
+                formStatus.style.display = 'block';
+                
+                if (type === 'success') {
+                    setTimeout(() => {
+                        formStatus.style.display = 'none';
+                    }, 5000);
+                }
+            }
+        }
+
+        // Navigation active link highlighting
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const scrollPos = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
