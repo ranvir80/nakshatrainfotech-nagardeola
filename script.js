@@ -102,10 +102,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Study Materials Button
-function openStudyMaterials() {
-    window.open('https://edudrivehub32.vercel.app/', '_blank', 'noopener,noreferrer');
-}
+// Study Materials Button (now handled as direct link in HTML)
 
 // Contact Form Handling
 if (contactForm) {
