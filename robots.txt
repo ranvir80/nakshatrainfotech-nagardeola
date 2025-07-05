@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://nakshatrainfotech.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow certain file types
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /*.json$
+
+# Allow important pages
+Allow: /index.html
+Allow: /#courses
+Allow: /#study-materials
+Allow: /#contact
